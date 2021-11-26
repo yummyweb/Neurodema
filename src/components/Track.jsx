@@ -20,7 +20,7 @@ function Track() {
 
   useEffect(() => {
     if (user) {
-      axios.post("http://localhost:5000/", {
+      axios.post("https://neurodema-api.herokuapp.com/", {
         imei: user.user_metadata.imei,
         radius: user.user_metadata.radius
       })
