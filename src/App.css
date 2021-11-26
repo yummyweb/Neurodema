@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Reem+Kufi&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.link {
+  color: #0000FF;
+  width: 520px;
+  cursor: pointer;
+}
+
+.input-text {
+  padding: 15px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 15px;
+  outline: none;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.auth-button {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.register-button {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Removing google maps logo, terms and conditions and report a problem. */
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+
+.gmnoprint {
+  display: none;
+}
