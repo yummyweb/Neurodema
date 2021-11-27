@@ -21,8 +21,7 @@ function Track() {
   useEffect(() => {
     if (user) {
       axios.post("https://neurodema-api.herokuapp.com/", {
-        imei: user.user_metadata.imei,
-        radius: user.user_metadata.radius
+        imei: user.user_metadata.imei
       })
       .then(res => {
         if (res.data.data.deviceRecords === []) {
@@ -44,8 +43,7 @@ function Track() {
             setData({
               timestamp: res.data.data.deviceRecords[0].timestamp,
               lat: latitude/latTotal,
-              lng: longitude/lngTotal,
-
+              lng: longitude/lngTotal
             })
           })
           .catch(_err => {
