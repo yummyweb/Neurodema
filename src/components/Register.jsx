@@ -47,7 +47,7 @@ function Register() {
     <>
         <h1 className="title">Register</h1>
         <Input state={email} setState={setEmail} placeholder="Enter your email." />
-        <Input state={password} setState={setPassword} placeholder="Enter your password." />
+        <Input isPassword state={password} setState={setPassword} placeholder="Enter your password." />
         <Input isImei state={imei} setState={setImei} placeholder="Enter your 15 digit device code." />
         <p className="link" onClick={() => navigate("/login")}>Already have an account? Login.</p>
         <div onClick={registerUser} className="register-button">Register</div>
