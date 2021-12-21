@@ -43,6 +43,7 @@ function Home() {
           <>
             <Input isImei={true} state={radius} setState={setRadius} placeholder="Enter preferred radius." />
             <div onClick={updateRadius} className="auth-button">Set Radius</div>
+            <div onClick={() => navigate("/track")} className="auth-button">Set Radius</div>
             <div onClick={logoutUser} className="auth-button">Logout</div>
           </>
         ) : (
